@@ -3,21 +3,25 @@ const CASES = [
     tag: 'Varejo',
     title: 'O lançamento que dominou Curitiba',
     meta: 'Front Light + Digital · 4 semanas',
+    img: '/Outdoormidia/cases/case1.jpg',
   },
   {
     tag: 'Entretenimento',
     title: 'Alta frequência em outdoor digital',
     meta: 'Outdoor Digital · 30 telas',
+    img: '/Outdoormidia/cases/case2.jpg',
   },
   {
     tag: 'Indústria',
     title: 'Cobertura completa nas rodovias',
     meta: 'Rodovias · PR + SC',
+    img: '/Outdoormidia/cases/case3.jpg',
   },
   {
     tag: 'Lançamento',
     title: 'Projeto icônico no coração da cidade',
     meta: 'Icônico · Monumental',
+    img: '/Outdoormidia/cases/case4.jpg',
   },
 ]
 
@@ -39,7 +43,15 @@ export default function Cases() {
       <div className="wrap">
         <div className="rail">
           {CASES.map((c) => (
-            <div className="case" key={c.title}>
+            <div
+              className="case"
+              key={c.title}
+              style={{
+                backgroundImage: `url(${c.img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
               <span className="ctag">{c.tag}</span>
               <div>
                 <h3>{c.title}</h3>
