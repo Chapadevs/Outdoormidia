@@ -9,7 +9,6 @@ import Impact from './components/Impact.jsx'
 import Coverage from './components/Coverage.jsx'
 import LeadCta from './components/LeadCta.jsx'
 import Footer from './components/Footer.jsx'
-import WhatsAppButton from './components/WhatsAppButton.jsx'
 
 export default function App() {
   useEffect(() => {
@@ -39,7 +38,6 @@ export default function App() {
       <Coverage />
       <LeadCta />
       <Footer />
-      <WhatsAppButton />
     </>
   )
 }

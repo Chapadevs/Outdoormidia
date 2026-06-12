@@ -9,7 +9,7 @@ export default function Hero() {
           <span>Out of Home</span> · <span>Desde 1960</span> · <span><b>PR + SC</b></span>
         </div>
         <h1 className="display">
-          Sua marca<br />do tamanho<br />do <span className="o">Sul.</span>
+          Toda <span className="o">Hora</span><br />em Todo<br /><span className="o">Lugar.</span>
         </h1>
         <div className="dimrow">
           <span>12 × 4 m</span>
