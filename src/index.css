@@ -164,6 +164,39 @@ footer .logo .dot::after{background:var(--ink)}
 .wa{position:fixed;right:24px;bottom:24px;z-index:70;width:56px;height:56px;border-radius:999px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 32px -10px rgba(0,0,0,.45);transition:.18s}
 .wa:hover{transform:scale(1.07)}
 
+/* PROPOSAL FORM PAGE */
+.proposal{min-height:100vh}
+.proposal-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.proposal-intro h1{font-size:clamp(44px,7vw,92px);margin:18px 0 0;color:var(--ink)}
+.proposal-intro h1 .o{color:var(--orange)}
+.proposal-intro p{margin:24px 0 0;color:var(--ink-soft);font-size:18px;max-width:34ch}
+.proposal-form{background:#fff;border:1px solid var(--line);padding:38px;display:flex;flex-direction:column;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.field label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.field label .opt{color:var(--line-2);font-weight:600}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);
+  border:1.5px solid var(--line);border-radius:2px;padding:13px 14px;transition:.16s ease;width:100%}
+.field textarea{resize:vertical;min-height:96px}
+.field input::placeholder,.field textarea::placeholder{color:var(--line-2)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--orange);background:#fff}
+.field select{appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A3F35' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.proposal-submit{justify-content:center;margin-top:6px;padding:17px 26px;font-size:15px}
+.proposal-done{max-width:620px;padding:48px 0 0}
+.proposal-done h1{font-size:clamp(44px,7vw,92px);margin:16px 0 0;color:var(--ink)}
+.proposal-done p{margin:24px 0 30px;color:var(--ink-soft);font-size:18px;max-width:46ch}
+.proposal-done.ticks::before,.proposal-done.ticks::after{display:none}
+
+@media(max-width:980px){
+  .proposal-wrap{grid-template-columns:1fr;gap:34px}
+  .proposal-form{padding:28px}
+}
+@media(max-width:560px){
+  .field-row{grid-template-columns:1fr}
+}
+
 .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 

@@ -22,7 +22,7 @@ export default function LeadCta() {
               <li>CNPJ, e-mail e WhatsApp para contato.</li>
             </ol>
             <a
-              href={WHATSAPP_URL}
+              href="#/proposta"
               className="btn btn-on-orange"
               style={{ width: '100%', justifyContent: 'center' }}
             >
