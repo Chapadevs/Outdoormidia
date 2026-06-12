@@ -27,6 +27,13 @@ export default function Header() {
               {label}
             </a>
           ))}
+          <a
+            href={WHATSAPP_URL}
+            className="btn btn-fill nav-cta-mobile"
+            onClick={() => setMenuOpen(false)}
+          >
+            Falar agora
+          </a>
         </nav>
         <div className="nav-right">
           <div className="lang">

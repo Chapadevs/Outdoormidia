@@ -3,6 +3,15 @@ import { WHATSAPP_URL } from '../constants.js'
 export default function Hero() {
   return (
     <section className="hero">
+      <video
+        className="hero-video"
+        src={`${import.meta.env.BASE_URL}media/hero-video.mp4`}
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+      />
       <div className="hero-side">Nº1 em Out of Home na Região Sul</div>
       <div className="wrap" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
         <div className="hero-meta eyebrow">
