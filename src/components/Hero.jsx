@@ -14,19 +14,9 @@ export default function Hero() {
       />
       <div className="hero-side">Nº1 em Out of Home na Região Sul</div>
       <div className="wrap" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <div className="hero-meta eyebrow">
-          <span>Out of Home</span> · <span>Desde 1960</span> · <span><b>PR + SC</b></span>
-        </div>
         <h1 className="display">
           Toda <span className="o">Hora</span><br />em Todo<br /><span className="o">Lugar.</span>
         </h1>
-        <div className="dimrow">
-          <span>12 × 4 m</span>
-          <span className="bar"></span>
-          <span>10 × 3 m passarela</span>
-          <span className="bar"></span>
-          <span>Digital / LED</span>
-        </div>
         <div className="hero-bottom">
           <p>
             66 anos colocando marcas onde o Sul passa todos os dias — do outdoor digital às
